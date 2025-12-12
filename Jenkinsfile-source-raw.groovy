@@ -1,5 +1,5 @@
 /**
- * For rwa testing only, requires script aprovals.
+ * For raw testing only, requires script aprovals.
  * In production, wrap ths behind sharedLib step. see Jenkinsfile-source.groovy
  *
  */
