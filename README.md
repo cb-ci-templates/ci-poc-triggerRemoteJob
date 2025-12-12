@@ -1,7 +1,9 @@
-![Diagram.png](Diagram.png)
+
 
 
 # Legend: Cross-Controller Pipeline Triggering Flow
+
+![flow.png](flow.png)
 
 ## Pipelines
 * **[Parent Pipeline](Jenkinsfile-source.groovy)**: The initiating pipeline script that loads a shared library and executes the `triggerRemoteJob` step to start a job on another controller.
