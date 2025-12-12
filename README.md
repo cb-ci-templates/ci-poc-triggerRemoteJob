@@ -1,7 +1,4 @@
-
-
-
-# Legend: Cross-Controller Pipeline Triggering Flow
+# Cross-Controller Pipeline Triggering Flow
 
 ![flow.png](flow.png)
 
