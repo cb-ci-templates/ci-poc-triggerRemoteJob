@@ -14,12 +14,12 @@ import jenkins.model.Jenkins
 String resolveInstanceId(String controllerPath) {
     String instanceId = null
     // Elevate privileges to SYSTEM to ensure visibility of the remote path
-    ACL.impersonate(ACL.SYSTEM, {
-        RemotePath resolvedPath = RemoteDirectory.walk(controllerPath)
-        if (resolvedPath != null) {
-            instanceId = resolvedPath.getInstanceId()
-        }
-    })
+    //ACL.impersonate(ACL.SYSTEM, {
+    RemotePath resolvedPath = RemoteDirectory.walk(controllerPath)
+    if (resolvedPath != null) {
+        instanceId = resolvedPath.getInstanceId()
+    }
+    //})
 
     return instanceId
 }
