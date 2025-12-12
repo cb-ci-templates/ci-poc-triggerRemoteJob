@@ -5,7 +5,7 @@
 ## Pipelines
 * **[Parent Pipeline](Jenkinsfile-source.groovy)**: The initiating pipeline script that loads a shared library and executes the `triggerRemoteJob` step to start a job on another controller.
 * **[Child Pipeline](Jenkinsfile-target.groovy)**: The target pipeline script that defines parameters (e.g., `paramKey1`) and executes steps when triggered by an upstream process.
-* **[Jenkinsfile-source-raw.groovy](Jenkinsfile-source-raw.groovy)**: Pipeline for raw testing without SharedLib (requires script approval, because it's not behind a shared library) 
+* **[Jenkinsfile-source-raw.groovy](Jenkinsfile-source-raw.groovy)**: Pipeline for raw testing without shared library (requires script approval, because it's not behind a shared library) 
 
 ## Shared Library Functions & Steps
 * **`triggerRemoteJob`**: A pipeline step used to trigger a job on a remote controller. It requires a `remotePathUrl` and can optionally take parameters via `parameterFactories`.
