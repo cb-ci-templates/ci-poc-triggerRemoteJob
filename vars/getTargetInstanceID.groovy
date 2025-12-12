@@ -1,6 +1,7 @@
 import com.cloudbees.opscenter.context.remote.RemoteDirectory
 import com.cloudbees.opscenter.context.remote.RemotePath
 
+@NonCPS
 def call(String controllerName,String jobPath){
 
     /* The controller name or path to resolve.  "target"= controller_name, "child" = job_path/job_name
