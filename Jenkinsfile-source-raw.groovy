@@ -26,12 +26,14 @@ String resolveInstanceId(String controllerPath) {
 
 node {
     stage('Resolve ID') {
-        String controllerPath = "///target/child2"
+        String controllerName="my-target-controller"
+        String jobName="my-target-job"
+        String controllerPath = "///${controllerName}/${jobName}"
         String id = resolveInstanceId(controllerPath)
 
         if (id) {
             println "Instance ID for '${controllerPath}': ${id}"
-            triggerRemoteJob remotePathMissing: stopAsFailure(), remotePathUrl: "jenkins://${id}/child2"
+            triggerRemoteJob remotePathMissing: stopAsFailure(), remotePathUrl: "jenkins://${id}/${jobName}"
 
         } else {
             error "Could not resolve path: ${controllerPath} (Check path correctness)"

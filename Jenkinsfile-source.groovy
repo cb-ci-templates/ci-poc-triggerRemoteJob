@@ -9,8 +9,8 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                triggerRemoteJob parameterFactories: [[$class: 'SimpleString', name: 'paramKey1', value: 'paramtValueFromparent']], remotePathMissing: stopAsFailure(), remotePathUrl: getTargetInstanceID("target","child")
-                triggerRemoteJob remotePathMissing: stopAsFailure(), remotePathUrl: getTargetInstanceID("target","child")                //build 'child'
+                triggerRemoteJob parameterFactories: [[$class: 'SimpleString', name: 'paramKey1', value: 'paramtValueFromparent']], remotePathMissing: stopAsFailure(), remotePathUrl: getTargetInstanceID("my-target-controller","my-target-job")
+                triggerRemoteJob remotePathMissing: stopAsFailure(), remotePathUrl: getTargetInstanceID("my-target-controller","my-target-job")                //build 'child'
             }
         }
     }
