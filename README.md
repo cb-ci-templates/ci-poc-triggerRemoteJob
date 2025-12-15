@@ -16,8 +16,6 @@
 * **`parameterFactories`**: A list used within the triggering pipeline to define and pass parameters (names and values) to the remote job.
 * **Pipeline Parameters**: Variables defined at the beginning of a pipeline (e.g., within a `parameters {}` block) that allow the pipeline to accept input values, such as strings defined with a default value and description.
 
-# Notes
-
 # Setup
 
 ## Prerequisites
