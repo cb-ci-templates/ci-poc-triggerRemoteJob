@@ -2,7 +2,7 @@ import com.cloudbees.opscenter.context.remote.RemoteDirectory
 import com.cloudbees.opscenter.context.remote.RemotePath
 
 /*  Resolves a Controller name and jpb path to an Controller instanceID
-controller_name=name of the target controller (for example "my-target-controller"),
+controllerName=name of the target controller (for example "my-target-controller"),
 jobPath=job_path/job_name jobname path (from controller root, f.e "my-foldername/my-jobname")
 */
 @NonCPS
