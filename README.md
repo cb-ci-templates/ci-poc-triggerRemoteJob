@@ -19,9 +19,8 @@
 # Setup
 
 ## Prerequisites
-- CJOC authentication mapping must be configured as **Trusted Controllers** with a **SYSTEM ↔ SYSTEM** mapping.  
-  See the CloudBees documentation:  
-  https://docs.cloudbees.com/docs/cloudbees-ci-kb/latest/client-and-managed-controllers/trigger-jobs-across-controllers
+CJOC authentication mapping must be configured as **Trusted Controllers** with a **SYSTEM ↔ SYSTEM** mapping.  
+See the [CloudBees documentation](https://docs.cloudbees.com/docs/cloudbees-ci-kb/latest/client-and-managed-controllers/trigger-jobs-across-controllers):  
 **Note**: The controllers must be re-provisioned after authentication mappings on the Operations Center. Documentation says "reconnect," but it must be re-provisioning https://docs.cloudbees.com/docs/cloudbees-ci/latest/secure/authentication-mapping#_change_the_authentication_mapping_strategy
 
 ## Controllers
