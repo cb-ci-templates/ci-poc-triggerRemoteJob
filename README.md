@@ -24,7 +24,6 @@ See the [CloudBees documentation - trigger-jobs-across-controllers](https://docs
 **Note**: The controllers must be re-provisioned after authentication mappings have been updated or changed on the Operations Center. 
 Documentation says "reconnect," but it must be re-provisioning [CloudBees documentation - change_the_authentication_mapping_strategy](https://docs.cloudbees.com/docs/cloudbees-ci/latest/secure/authentication-mapping#_change_the_authentication_mapping_strategy)
 
-
 ## Controllers
 
 1. **Source Controller**
