@@ -5,6 +5,9 @@ library identifier: "ci-shared-library@${env.SHARED_LIB_TAG}", retriever: modern
 
 pipeline {
     agent none
+    parameters {
+        string defaultValue: 'test', name: 'test'
+    }
     stages {
         stage('Hello') {
             steps {
