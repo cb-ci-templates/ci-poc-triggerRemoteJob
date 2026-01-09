@@ -11,7 +11,12 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World ${GIT_BRANCH}'
+                echo "Hello world"
+                // This usually contains "origin/branch-name" or just "branch-name"
+                echo "Git Branch: ${env.GIT_BRANCH}"
+                
+                // If you need the commit hash
+                echo "Git Commit: ${env.GIT_COMMIT}"
                 // Trigger parameterized job
                 triggerRemoteJob parameterFactories: [[$class: 'SimpleString', name: 'paramKey1', value: 'paramtValueFromparent']], remotePathMissing: stopAsFailure(), remotePathUrl: getTargetInstanceID("controllers/my-target-controller","folder/my-target-job")
 
