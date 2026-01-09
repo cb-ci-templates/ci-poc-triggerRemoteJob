@@ -1,5 +1,5 @@
 # Cross-Controller Pipeline Triggering Flow
-   aaaa     
+
 ![flow.png](flow.png)
 
 ## Shared Library Functions & Steps
