@@ -4,7 +4,9 @@ library identifier: "ci-shared-library@${env.SHARED_LIB_TAG}", retriever: modern
          remote: 'https://github.com/cb-ci-templates/ci-poc-triggerRemoteJob.git'])
 
 pipeline {
-    agent none
+    agent {
+        label 'built-in'
+    }
     parameters {
         string defaultValue: 'test', name: 'test'
     }
