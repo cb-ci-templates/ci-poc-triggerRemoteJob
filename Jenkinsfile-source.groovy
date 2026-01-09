@@ -1,5 +1,6 @@
 env.SHARED_LIB_TAG="main"
-library identifier: "ci-shared-library@${env.SHARED_LIB_TAG}", retriever: modernSCM(
+//library identifier: "ci-shared-library@${env.SHARED_LIB_TAG}", retriever: modernSCM(
+library identifier: "ci-shared-library", retriever: modernSCM(
         [$class: 'GitSCMSource',
          remote: 'https://github.com/cb-ci-templates/ci-poc-triggerRemoteJob.git'])
 
