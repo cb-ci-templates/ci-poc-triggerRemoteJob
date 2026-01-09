@@ -1,4 +1,4 @@
-env.SHARED_LIB_TAG="main"
+env.SHARED_LIB_TAG="branch1"
 //library identifier: "ci-shared-library@${env.SHARED_LIB_TAG}", retriever: modernSCM(
 library identifier: "ci-shared-library", retriever: modernSCM(
         [$class: 'GitSCMSource',
