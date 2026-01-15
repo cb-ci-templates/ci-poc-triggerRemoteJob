@@ -6,7 +6,7 @@ pipeline {
         string defaultValue: 'paramValue1', description: 'paramKey1=paramValue1', name: 'paramKey1', trim: true
     }
     stages {
-        stage('Hello') {
+        stage('Hello Branch1') {
             steps {
                 echo "Hello Child Parameters: paramKey1=${params.paramKey1}"
                 //sleep 1000
@@ -14,6 +14,8 @@ pipeline {
                 
                 // If you need the commit hash
                 echo "Git Commit: ${env.GIT_COMMIT}"
+                sh "ls -l"
+                sh "cat .triggerTest"
                 script {
                     // Get branch name, stripping 'origin/' if present
                     def branch = sh(script: "git rev-parse --abbrev-ref HEAD", returnStdout: true).trim()
