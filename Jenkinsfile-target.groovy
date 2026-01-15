@@ -2,7 +2,7 @@ pipeline {
     agent {
         label 'built-in'
     }
-    options { skipDefaultCheckout() } // Disable the broken auto-checkout
+    //options { skipDefaultCheckout() } // Disable the broken auto-checkout
     parameters {
         string defaultValue: 'paramValue1', description: 'paramKey1=paramValue1', name: 'paramKey1', trim: true
     }
