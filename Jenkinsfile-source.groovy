@@ -3,6 +3,7 @@ library identifier: "ci-shared-library@${env.SHARED_LIB_TAG}", retriever: modern
         [$class: 'GitSCMSource',
          remote: 'https://github.com/cb-ci-templates/ci-poc-triggerRemoteJob.git'])
 
+
 pipeline {
     agent {
         label 'built-in'
